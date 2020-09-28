@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 header nav a {
@@ -15,38 +15,234 @@ header .header-container {
     height: 35px;
 }
 
-#bloque_menu{
-	position:relative;
-	display:block;
-	height:21px;
-	font-size:11px;
-	font-weight:bold;
-	background:transparent url(bgOFF.gif) repeat-x top left;
-	font-family:Arial,Verdana,Helvitica,sans-serif;
-    border-bottom:1px solid #d9d9d9;
+body {
+	background: #FFF;
+}
+
+#bloque_menu {
+    background:black;
+	width:100%;
+	padding:20px;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+#bloque_menu ul{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	border-width: 2px;
+	border-radius: 200px;
+	padding: 0px 0px 0px 0px;
+}
+
+#bloque_menu ul li {
+	display:flex;
+	float:left;
+	margin:0 1px 0 0;
+}
+
+#bloque_menu ul li a {
+	background:black;
+	color:white;
+	text-align: center;
+	text-decoration: none;
+	padding:5px;
+	flex-grow:1;
+	text-orientation: upright;
+}
+
+#bloque_menu ul li a:hover {
+	background: #c9c9c99a;
+}
+
+#boton-buscar {
+	display: block;
+	position: relative;
+	top: 15px; left:350px;
+	font-size: 22px;
+}
+
+.opciones {
+	width: 200px;
+	margin: 10px;
+	background-color: rgb(224, 219, 219);
+	border-style: solid solid none solid;
+	border-color: black;
+	border-width: 1px;
+}
+
+.opciones li a {
+	height: 32px;
+	height: 24p;
+	text-decoration: none;
+	height: none;
+	border-style: solid solid none solid;
+	border-color: black;
+}
+
+.opciones li a:link, .opciones li a {
+	color: black;
+	display: block;
+	background:  url(menu.gif);
+	padding: 8px 0 0 10px;
+}
+
+.opciones li a:hover {
+	color: rgb(67, 87, 197);
+	display: block;
+	background: url(menu.gif)  0 -32px;
+	padding: 8px 0 0 10px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+	vertical-align: middle
+}
+
+.block_content-footer {
+	width: 200px;
+	margin: 10px;
+	background-color: rgb(224, 219, 219);
+	border-style: solid solid none solid;
+	border-color: black;
+	border-width: 1px;
+}
+
+.block_content-footer li a {
+	height: 32px;
+	height: 24p;
+	text-decoration: none;
+	height: none;
+	border-style: solid solid none solid;
+	border-color: black;
+}
+
+.block_content-footer li a:link, .block_content-footer li a {
+	color: black;
+	display: block;
+	background:  url(menu.gif);
+	padding: 8px 0 0 10px;
+}
+
+.block_content-footer li a:hover {
+	color: rgb(67, 87, 197);
+	display: block;
+	background: url(menu.gif)  0 -32px;
+	padding: 8px 0 0 10px;
+}
+
+.toggle-footer3 {
+	width:100%;
+	padding:20px;
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+.toggle-footer3 .item {
+	width:50%;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	border-width: 2px;
+	border-radius: 200px;
+	padding: 0px 0px 0px 0px;
     background-color: black;
     height: 50px;
 }
 
-#bloque_menu ul{
+.toggle-footer3 .item  ul{
 	margin:0;
 	padding:0;
 	list-style-type:none;
 	width:auto;
 }
 
-#bloque_menu ul li {
+.toggle-footer3 .item  ul li {
 	display:block;
 	float:left;
 	margin:0 1px 0 0;
 }
 
-#bloque_menu ul li a {
+.toggle-footer3 .item  ul li a {
+	display:block;
+	float:left;
+	color:#dedddd;
+	text-decoration:none;
+	padding:3px 20px 0 20px;
+	height:18px;
+    font: 500 18px/22px "Droid Serif",Arial,Helvetica,sans-serif;
+}
+
+.toggle-footer3 .item {
+	position:relative;
+	display:block;
+	height:50px;
+	font-size:11px;
+	font-weight:bold;
+	background:transparent url(bgOFF.gif) repeat-x top left;
+	font-family:Arial,Verdana,Helvitica,sans-serif;
+    border-bottom:1px solid #d9d9d9;
+    background-color: rgba(0, 0, 0, 0.842);
+    height: 50px;
+}
+
+.toggle-footer-apodo  ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	width:auto;
+}
+
+.toggle-footer-apodo  ul li {
+	display:block;
+	float:left;
+	margin:0 1px 0 0;
+}
+
+.toggle-footer-apodo  ul li a {
 	display:block;
 	float:left;
 	color:#dedddd;
 	text-decoration:none;
 	padding:3px 20px 0 20px;
     height:18px;
-    font: 500 16px/22px "Droid Serif",Arial,Helvetica,sans-serif;
+    font: 500 18px/22px "Droid Serif",Arial,Helvetica,sans-serif;
+}
+
+.consulta-buscador {
+	width: 200px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.menu_contener a {
+	font-size: 14px;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+		flex-direction: column;
+	}
+
+	header {
+		flex-direction: column;
+		padding: o;
+	}
+
+	header nav {
+		width: 100%;
+	}
 }
