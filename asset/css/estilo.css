@@ -5,18 +5,34 @@
 }
 
 header nav a {
-    background-color: rgb(185, 184, 184);
-    color: black;
+    background-color: rgb(230, 219, 219);
+	color: black;
+	text-align: left;
 }
 
 header .header-container {
-    background-color:  rgb(185, 184, 184);
+	display: flex;
+    background-color:  rgb(230, 219, 219);
     text-align: right;
-    height: 35px;
+	height: 35px;
+	vertical-align: center;
+	justify-content: flex-end;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items:center;
+}
+
+.carrito-compra {
+	display: flex;
+    justify-content: flex-end
 }
 
 body {
 	background: #FFF;
+	display: block;
 }
 
 #bloque_menu {
@@ -69,7 +85,7 @@ body {
 .opciones {
 	width: 200px;
 	margin: 10px;
-	background-color: rgb(224, 219, 219);
+	background-color: white;
 	border-style: solid solid none solid;
 	border-color: black;
 	border-width: 1px;
@@ -80,8 +96,8 @@ body {
 	height: 24p;
 	text-decoration: none;
 	height: none;
-	border-style: solid solid none solid;
-	border-color: black;
+	border-style: solid solid none solid ;
+	border-color: rgba(156, 150, 150, 0.993);
 }
 
 .opciones li a:link, .opciones li a {
@@ -232,6 +248,13 @@ img {
 	font-size: 14px;
 }
 
+footer .row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items:center;
+	justify-content: space-evenly;
+}
+
 @media screen and (max-width: 800px) {
 	body {
 		flex-direction: column;
@@ -244,5 +267,11 @@ img {
 
 	header nav {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	footer {
+		justify-content: space-evenly;
 	}
 }
